@@ -18,11 +18,11 @@ body {
 }
 
 .snake-piece {
-  background-color: hsl(100, 100%, 50%);
+  background-color: hsl(100, 78%, 34%);
   border: 0.5vmin solid black;
 }
 
 .food-piece {
-  background-color: hsl(0, 100%, 50%);
+  background-color: hsl(0, 78%, 34%);
   border: 0.5vmin solid black;
 }
