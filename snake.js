@@ -33,7 +33,7 @@ export function expandSnake(amount) {
 
 export function onSnake(position, { ignoreHead = false } = {}) {
   return snakeBody.some((segment, index) => {
-    if (ignoreHead === trud && index === 0) return false;
+    if (ignoreHead === true && index === 0) return false;
     return equalPositions(segment, position);
   });
 }
@@ -42,7 +42,7 @@ export function getSnakeHead() {
   return snakeBody[0];
 }
 
-export function snakeInterSection() {
+export function snakeIntersection() {
   return onSnake(snakeBody[0], { ignoreHead: true });
 }
 
